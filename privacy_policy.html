@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Auto SMS Forwarder</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1565c0, #0d47a1);
+      color: #fff;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1565c0;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      font-size: 1.3rem;
+    }
+
+    p { margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #e3f2fd;
+      border-left: 4px solid #1565c0;
+      border-radius: 4px;
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-radius: 20px;
+      padding: 2px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      padding-bottom: 32px;
+    }
+
+    a { color: #1565c0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📱 Auto SMS Forwarder</h1>
+  <p>Privacy Policy &nbsp;·&nbsp; Effective Date: October 21, 2025</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2><span class="icon">👋</span> Introduction</h2>
+    <p>
+      Auto SMS Forwarder ("the App") is developed and maintained by
+      <strong>S.M. Shahriyar</strong>. This Privacy Policy explains what data
+      the App accesses, how it is used, and what we do — and do not — do with it.
+    </p>
+    <p>
+      By using the App, you agree to the practices described in this policy.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📩</span> SMS Data <span class="badge">Sensitive</span></h2>
+    <p>
+      The App reads incoming SMS messages solely to forward them to the
+      destination(s) you configure (phone number, REST API, or Google Sheet).
+    </p>
+    <div class="highlight">
+      <strong>We never store, upload, or share your SMS content</strong> with any
+      third-party server, analytics service, or advertiser. All processing
+      happens entirely on your device.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔐</span> Permissions Used</h2>
+    <ul>
+      <li><strong>RECEIVE_SMS / READ_SMS</strong> – to detect and read incoming messages for forwarding.</li>
+      <li><strong>SEND_SMS</strong> – to forward messages to a configured phone number.</li>
+      <li><strong>INTERNET</strong> – to forward messages to a REST API or Google Sheet endpoint you provide.</li>
+      <li><strong>RECEIVE_BOOT_COMPLETED</strong> – to restart the forwarding service automatically after a device reboot.</li>
+      <li><strong>FOREGROUND_SERVICE / POST_NOTIFICATIONS</strong> – to keep the background service alive and show a persistent status notification.</li>
+      <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> – to prevent Android from killing the service during idle periods.</li>
+    </ul>
+    <div class="highlight">
+      No permission is used for advertising, tracking, or any purpose beyond
+      core SMS forwarding functionality.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">💾</span> Data Storage</h2>
+    <p>
+      The App stores the following data <strong>locally on your device only</strong>:
+    </p>
+    <ul>
+      <li>Your forwarding configuration (destination numbers, API URL, filters).</li>
+      <li>A local log of forwarded messages for your own review.</li>
+      <li>App settings (enable/disable toggles, blocked senders, etc.).</li>
+    </ul>
+    <p>
+      This data never leaves your device unless you explicitly configure a
+      forwarding destination.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🌐</span> Third-Party Services</h2>
+    <p>
+      The App does <strong>not</strong> integrate any third-party analytics,
+      crash reporting, advertising SDKs, or tracking libraries.
+    </p>
+    <p>
+      If you configure an external REST API or Google Sheets webhook as a
+      forwarding destination, your message content will be sent to that
+      endpoint. The privacy practices of those services are governed by their
+      own policies.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>
+      The App is not directed at children under the age of 13. We do not
+      knowingly collect personal information from children.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be
+      reflected on this page with an updated effective date. Continued use of
+      the App after changes constitutes acceptance of the revised policy.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">✉️</span> Contact</h2>
+    <p>
+      If you have any questions or concerns about this Privacy Policy, please
+      contact us at:
+    </p>
+    <p>
+      <strong>Developer:</strong> S.M. Shahriyar<br />
+      <strong>App:</strong> Auto SMS Forwarder (<code>com.autosmsforwarder.app</code>)<br />
+      <strong>GitHub:</strong> <a href="https://github.com/SMShahriyar" target="_blank">github.com/SMShahriyar</a>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 S.M. Shahriyar &nbsp;·&nbsp; Auto SMS Forwarder &nbsp;·&nbsp; All rights reserved.
+</footer>
+
+</body>
+</html>
